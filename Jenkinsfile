@@ -4,7 +4,7 @@ pipeline{
     maven "maven"
  }
  stages{
-  stage()"SCM Checkout"){
+  stage("SCM Checkout"){
      steps{
         checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/NABEELM1998/Jenkins.git']])
       }
